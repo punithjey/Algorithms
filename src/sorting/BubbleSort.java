@@ -11,7 +11,9 @@ import java.util.Arrays;
  */
 public class BubbleSort {
 
-    /** The execution starts from here */
+    /**
+     * The execution starts from here
+     */
     public static void main(String[] args) {
         System.out.println("<---------------- Demo: Bubble Sort ------------------>");
 
@@ -28,16 +30,16 @@ public class BubbleSort {
     }
 
     /**
-     * @description: The method is used to sort array elements using bubble sort
      * @param arr - an input array to be sorted
+     * @description: The method is used to sort array elements using bubble sort
      */
     private static void bubbleSort(int arr[]) {
-        for (int i = 0; i < arr.length-1; i++) {
-            for (int j = 0; j < arr.length-i-1; j++) {
-                if(arr[j] > arr[j+1]) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = 0; j < arr.length - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
                     int temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                 }
             }
         }
